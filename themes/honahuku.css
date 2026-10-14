@@ -1,0 +1,41 @@
+/* @theme honahuku */
+@import 'default';
+
+section {
+  --accent: #087f8c;
+  --ink: #172b3a;
+  --muted: #556575;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 30px;
+  line-height: 1.55;
+  padding: 58px 72px 74px;
+  justify-content: flex-start;
+}
+h1 { color: var(--ink); font-size: 46px; line-height: 1.3; margin: 0 0 30px; }
+h2 { color: var(--accent); font-size: 36px; }
+h3 { font-size: 30px; }
+strong, a { color: var(--accent); }
+ul, ol { padding-left: 1.25em; }
+li + li { margin-top: 12px; }
+header, footer { font-size: 16px; color: var(--muted); left: 72px; right: 72px; }
+header { top: 20px; }
+footer { bottom: 24px; }
+section::after { color: var(--muted); font-size: 16px; right: 36px; bottom: 24px; }
+code { font-family: "Cascadia Code", "Noto Sans Mono CJK JP", Consolas, monospace; }
+pre { background: #f2f6f8; border: 1px solid #dce5eb; border-radius: 10px; padding: 24px; font-size: 24px; line-height: 1.5; }
+blockquote { border-left: 5px solid var(--accent); color: var(--muted); padding-left: 22px; }
+table { font-size: 26px; width: 100%; }
+th { background: #eaf5f5; color: var(--ink); }
+section.cover, section.section, section.statement { justify-content: center; }
+section.cover { border-left: 14px solid var(--accent); }
+section.cover h1 { font-size: 60px; max-width: 1000px; }
+section.cover p { color: var(--muted); }
+section.section { background: #eef7f7; }
+section.section h1, section.statement h1 { font-size: 58px; }
+section.figure > p:has(img) { text-align: center; margin: 0; }
+section.figure img { max-width: 100%; max-height: 410px; }
+section.figure > p:last-of-type { font-size: 22px; color: var(--muted); text-align: center; }
+section.references { font-size: 24px; }
+section.references a { overflow-wrap: anywhere; }
