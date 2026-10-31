@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+<title id="title">ClientからLeaderを経由してReplicaへ書き込む構成</title>
+<desc id="desc">Client、Leader、Replica A、Replica Bの四つのノードを矢印で結ぶ。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<g fill="#eef7f7" stroke="#087f8c" stroke-width="3">
+<rect x="20" y="140" width="210" height="80" rx="12"/>
+<rect x="370" y="140" width="210" height="80" rx="12"/>
+<rect x="770" y="30" width="210" height="80" rx="12"/>
+<rect x="770" y="250" width="210" height="80" rx="12"/>
+</g>
+<g fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)">
+<path d="M230 180 H365"/>
+<path d="M580 160 L765 70"/>
+<path d="M580 200 L765 290"/>
+</g>
+<g font-family="sans-serif" font-size="28" fill="#172b3a" text-anchor="middle">
+<text x="125" y="190">Client</text><text x="475" y="190">Leader</text>
+<text x="875" y="80">Replica A</text><text x="875" y="300">Replica B</text>
+<text x="295" y="150" font-size="22">write</text>
+</g></svg>

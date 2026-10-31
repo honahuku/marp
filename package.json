@@ -1,0 +1,16 @@
+{
+  "name": "honahuku-marp",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "marp --server slides",
+    "build": "node scripts/build.mjs html",
+    "pdf": "node scripts/build.mjs pdf"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.5.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
