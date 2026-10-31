@@ -33,11 +33,10 @@ Node.js 22以上とnpmをLinux側に用意して、worktreeのルートで実行
 
 ```sh
 npm ci
-npm run build
-CHROME_PATH=/usr/bin/chromium npm run pdf
+CHROME_PATH=/usr/bin/chromium npm run build
 ```
 
-出力は `dist/template.html` と `dist/template.pdf`。画像は `dist/assets/` にコピーされる。`CHROME_PATH` はこのPDF生成コマンドだけに適用し、変換に使うLinux側のブラウザを指定する。ブラウザの場所は `command -v chromium` で調べ、異なる場合はそのパスを指定する。
+HTMLとPDFを `dist/` に生成し、画像を `dist/assets/` にコピーする。`CHROME_PATH` にはPDF変換に使うLinux側のブラウザを指定する。ブラウザの場所は `command -v chromium` で調べ、異なる場合はそのパスを指定する。
 
 日本語フォントとPDFの内容は次のコマンドで調べられる。
 

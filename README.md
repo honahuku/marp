@@ -36,10 +36,16 @@ slides/template.mdを複製して、slides/2026-xx-xx-event.mdなどの名前に
 
 ```sh
 npm run build
-npm run pdf
 ```
 
-slides/内のMarkdownをまとめてdist/に出力する。template.mdはtemplate.htmlとtemplate.pdfになる。HTMLと一緒に配布する画像もdist/assets/にコピーするので、HTMLを渡すときはdist/全体を渡す。
+slides/内のMarkdownをHTMLとPDFの両方に変換し、dist/に出力する。template.mdはtemplate.htmlとtemplate.pdfになる。PDFだけを再生成する場合は`npm run pdf`を使う。HTMLと一緒に配布する画像もdist/assets/にコピーするので、HTMLを渡すときはdist/全体を渡す。
+
+個別の資料を出力する場合は、リポジトリのルートから次のように実行する。
+
+```sh
+npx marp slides/2026-10-31-urban-infrastructure.md -o dist/2026-10-31-urban-infrastructure.html
+npx marp slides/2026-10-31-urban-infrastructure.md --pdf -o dist/2026-10-31-urban-infrastructure.pdf
+```
 
 PDF変換にはChrome、Edge、Firefoxのいずれかが必要。[Marp CLIの変換要件](https://github.com/marp-team/marp-cli#basic-usage)を参照。日本語フォントはNoto Sans CJK JP、Noto Sans JP、游ゴシック、メイリオの順に使う。LinuxではNoto CJKをインストールする。
 
